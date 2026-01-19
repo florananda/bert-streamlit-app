@@ -1,6 +1,6 @@
-# BERT Model Analysis Streamlit App
+# GPT Model Analysis Streamlit App
 
-A Streamlit application that displays a styled table analyzing BERT model strengths and limitations with interactive hover effects.
+A Streamlit application that displays a styled table analyzing GPT model strengths and limitations with interactive hover effects.
 
 ## Features
 
@@ -13,7 +13,7 @@ A Streamlit application that displays a styled table analyzing BERT model streng
 1. Clone the repository:
 ```bash
 git clone <your-repo-url>
-cd bert-streamlit-app
+cd GPT-streamlit-app
 ```
 
 2. Create a virtual environment (recommended):
@@ -121,8 +121,8 @@ ENTRYPOINT ["streamlit", "run", "app.py", "--server.port=8501", "--server.addres
 
 2. Build and run:
 ```bash
-docker build -t bert-streamlit-app .
-docker run -p 8501:8501 bert-streamlit-app
+docker build -t GPT-streamlit-app .
+docker run -p 8501:8501 GPT-streamlit-app
 ```
 
 ### Option 4: AWS EC2 / Other VPS
@@ -142,7 +142,7 @@ The app uses `.streamlit/config.toml` to disable telemetry. This file is already
 ## Project Structure
 
 ```
-bert-streamlit-app/
+GPT-streamlit-app/
 ├── app.py                 # Main Streamlit application
 ├── requirements.txt       # Python dependencies
 ├── .streamlit/

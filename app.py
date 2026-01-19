@@ -37,13 +37,13 @@ df = pd.DataFrame(data)
 def create_styled_table(df):
     html = """
     <style>
-    .bert-table {
+    .BERT-table {
         width: 100%;
         border-collapse: collapse;
         margin: 20px 0;
         font-family: Arial, sans-serif;
     }
-    .bert-table th {
+    .BERT-table th {
         background-color: #1f1f1f;
         color: white;
         padding: 12px;
@@ -51,7 +51,7 @@ def create_styled_table(df):
         font-weight: bold;
         border: 1px solid #ddd;
     }
-    .bert-table td {
+    .BERT-table td {
         padding: 12px;
         border: 1px solid #ddd;
     }
@@ -76,7 +76,7 @@ def create_styled_table(df):
         cursor: pointer;
     }
     </style>
-    <table class="bert-table">
+    <table class="BERT-table">
         <thead>
             <tr>
                 <th>Category</th>
@@ -112,7 +112,7 @@ csv = export_to_csv(df)
 st.download_button(
     label="📥 Download table as CSV",
     data=csv,
-    file_name="bert_model_analysis.csv",
+    file_name="BERT_model_analysis.csv",
     mime="text/csv",
     help="Click to download the table as a CSV file"
 )
